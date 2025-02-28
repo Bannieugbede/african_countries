@@ -13,7 +13,8 @@ class CountryDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(countryName),
+        centerTitle: true,
+        title: Text(countryName,style: TextStyle(color: Colors.white,),),
         backgroundColor: Colors.green[700],
       ),
       body: BlocBuilder<CountryBloc, CountryState>(

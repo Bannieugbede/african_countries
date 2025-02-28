@@ -10,7 +10,8 @@ class CountryListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('African Countries'),
+        centerTitle: true,
+        title: Text('African Countries',style: TextStyle(color: Colors.white,),),
         backgroundColor: Colors.green[700],
       ),
       body: BlocBuilder<CountryBloc, CountryState>(
